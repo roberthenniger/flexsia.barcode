@@ -1,0 +1,28 @@
+{
+    "name": "flexsia/barcode",
+    "description": "Package to generate svg barcodes of different types. This package was planned to use in document creation and adds a extension for twig to make inline svg graphics generation easy. When you plan to use the render extension you need to make sure to install flexsia/render too. Since it should be possible to use it standalone for svg graphics generation we made the package optional and only suggest it.",
+    "authors": [
+        {
+            "name": "Robert Henniger",
+            "email": "robert@adaptiv.ch"
+        }
+    ],
+    "require": {
+        "php"                                   :   ">=7.0"
+		, "picqer/php-barcode-generator"        :   "~2.0"
+		, "chillerlan/php-qrcode"               :   "~3.2"
+    },
+	"suggest":{
+		"flexsia/render"						:	"Required to use the barcode twig extension"
+	},
+    "autoload": {
+        "psr-0": {
+            "Flexsia\\Barcode\\"   :   "Lib/"
+        }
+    },
+    "extra"   : {
+        "branch-alias": {
+            "dev-develop": "0.1.x-dev"
+        }
+    }
+}
