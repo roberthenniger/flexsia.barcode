@@ -184,7 +184,7 @@ final class Generator {
             ]));
             return $qrcode->render($data);
         }else{
-            return (new BarcodeGeneratorSVG())->getBarcode('98befbaf-4a93-45e4-ba40-ff8d2ed66f11', $type, 2, 30, $color);
+            return (new BarcodeGeneratorSVG())->getBarcode($data, $type, 2, 30, $color);
         }
 
     }
